@@ -1,0 +1,80 @@
+/* General */
+body {
+  margin: 0;
+}
+
+.hero-container {
+  background-color: #5c008a;
+  background-image: url('https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta button {
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+.white {
+  background-color: #fff;
+  color: #5c008a;
+}
+
+.gray {
+  background-color: #e5e4e2;
+  color: #ff5733;
+}
+
+/* floating button */
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100%;
+}
+
+.column {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cta-button {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  /* width: 100%; */
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .cta-button {
+    width: 100%;
+    font-size: 30px;
+  }
+}
